@@ -4,6 +4,6 @@
     {
         int GetTotalScore();
         BowlingScoreResponse ProcessFrame(int frameNumber, int rollNumber, int rollScore);
-        bool resetGame();
+        bool ResetGame();
     }
 }

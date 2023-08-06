@@ -20,7 +20,7 @@ namespace VenminderCodingChallenge.Controllers
         [HttpDelete]
         public bool Delete()
         {
-            return _bowlingScoreRepository.resetGame();
+            return _bowlingScoreRepository.ResetGame();
         }
 
         [HttpGet]

@@ -26,7 +26,7 @@ namespace VenminderCodingChallenge.Repositories
             return totalScore;
         }
 
-        public bool resetGame()
+        public bool ResetGame()
         {
             _frameRolls = new FrameRolls(1, null);
             return true;

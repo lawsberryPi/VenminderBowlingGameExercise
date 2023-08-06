@@ -186,7 +186,7 @@ namespace VenminderCodingChallengeTests.Repositories
             Array.Fill(testInput, 5);
             var firstFrame = new List<int>() { 1, 1, 5 };
             var result = GenerateFramesFromList(testInput.ToList(), firstFrame);
-            result.resetGame();
+            result.ResetGame();
             result.GetTotalScore().Should().Be(0);
         }
 
