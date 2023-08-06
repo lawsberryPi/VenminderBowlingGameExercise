@@ -13,7 +13,7 @@ The project is written in ASP.NET core 6, therefore, it can be ran on Windows or
 - If user want to reset the game, then hit Reset the Game button to start over.
 
 
-# Software design key consideration
+# Software design key considerations
 ## Data Type
 Singly Linked Lists can represent bowling score frame appropriately:
 - Because the frame score can be affected by the next two frames, therefore a relationship between frames is desired. Everytime when there is a new roll score gets push in. the program will iterate through the entire list to ensure every frame is updated.
