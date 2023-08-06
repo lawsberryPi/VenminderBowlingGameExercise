@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9TZZn4SOYb085tg1hjTZykiNb80gLE+DT5xvHdraZ9IQlZDCcR7pxI0z3MawcxF59yrd+ObNgIiV+plrsDudKQ==",
+  "dgSpecHash": "leKuhAjIiLlu4DCNqEvIxYAZ4FG+mZG1+IU/J7yucC5sgQ2hGfDMGtnXY/d6P0s7PCNBUmC9/VTAl7ZTnFKylw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luoch\\source\\repos\\VenminderCodingChallenge\\VenminderCodingChallengeTests\\VenminderCodingChallengeTests.csproj",
+  "projectFilePath": "C:\\Users\\luoch\\OneDrive\\文档\\Repo\\VenminderBowlingGameExercise\\VenminderCodingChallengeTests\\VenminderCodingChallengeTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luoch\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\luoch\\.nuget\\packages\\fluentassertions\\6.11.0\\fluentassertions.6.11.0.nupkg.sha512",
