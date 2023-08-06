@@ -49,11 +49,21 @@ export class HomeComponent {
    * Post the roll score to the server 
    * */
   public postRollScore() {
-    //const option:
+    const rollInfo = this.bowlingResponse?.nextRoll;
+    const intScore = parseInt(this.rollScore ?? "0");
+    if (intScore > 10) {
+      alert("you can not hit more than 10 pins for one delivery");
+      return
+    };
+    const roll1Score = this.bowlingResponse?.framesData[this.bowlingResponse?.framesData.length - 1 ]?.roll1 ?? 0;
+    if (rollInfo?.rollNumber == 2 && (roll1Score + intScore) > 10 && rollInfo?.frameNumber !== 10) {
+      alert("you can not hit more than 10 pins for one frame");
+      return
+    }
     const formData = new FormData();
     // because for first roll in first frame, there will be no bowlingResponse, therefore assign 1
-    formData.append("frameNumber", this.bowlingResponse?.nextRoll.frameNumber.toString() ?? "1");
-    formData.append("rollNumber", this.bowlingResponse?.nextRoll.rollNumber.toString() ?? "1");
+    formData.append("frameNumber", rollInfo?.frameNumber.toString() ?? "1");
+    formData.append("rollNumber", rollInfo?.rollNumber.toString() ?? "1");
     formData.append("rollScore", this.rollScore ?? "0");
 
     this._httpClient.post<BowlingScoreResponse>(this._baseUrl + 'bowling', formData).subscribe(result => {
