@@ -27,7 +27,7 @@ Singly Linked Lists can represent bowling score frame appropriately, each node h
 | NextFrame     | FrameRolls | access to next frame from this frame      |
 | GetFrameScore | Function   | get the score for this frame              |
 - Because the frame score can be affected by the next two frames, therefore a relationship between frames is desired. Everytime when there is a new roll score gets push in. the program will iterate through the entire list to ensure every frame is updated.
-- There are some helpful booleans in the data type that represent a frame, which are IsStike and IsSpare. Store those data in each node makes the code easy to understand, because we don't need to create extra logic to figure out if that frame is IsStike or IsSpare.
+- IsStike and IsSpare are properties for the node, because once the frame is a strike/spare frame, that property will not change. Store those data in each node makes the code easy to understand, and no need to create extra logic when score is calculated.
 
 ## software design pattern: 
 MVC Pattern:
