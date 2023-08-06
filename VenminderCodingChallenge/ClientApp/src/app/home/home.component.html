@@ -1,0 +1,49 @@
+<h1 id="tableLabel">Venminder Bowling Game Exercise</h1>
+
+<p>User input the score manually, because of the time constrain, validate is not implemented</p>
+
+<p *ngIf="!bowlingResponse"><em>Type in Roll Score to begin...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="bowlingResponse">
+  <thead>
+    <tr>
+      <th>Frame</th>
+      <th>Roll 1</th>
+      <th>Roll 2</th>
+      <th>Roll 3</th>
+      <th>Frame Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let frameDetail of bowlingResponse.framesData">
+      <td>{{ frameDetail.frameNumber }}</td>
+      <td>{{ frameDetail.roll1 }}</td>
+      <td>{{ frameDetail.roll2 }}</td>
+      <td>{{ frameDetail.roll3 }}</td>
+      <td>{{ frameDetail.frameScore }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<label>roll score (manual input, two rolls no greater than 10)</label>
+<input id="rollScore" [(ngModel)]="rollScore" type="text" />
+<div>
+  <button class="btn btn-primary" (click)="postRollScore()"
+          [disabled]="bowlingResponse?.nextRoll?.isEndOfGame">
+    {{bowlingResponse?.nextRoll?.isEndOfGame ? "Game finished" : "Delivery"}}
+  </button>
+</div>
+
+<div>
+  <button class="btn btn-info" (click)="getTotalScore()"
+          [disabled]="!bowlingResponse?.nextRoll?.isEndOfGame">
+    Get Final Score {{totalScore}}
+  </button>
+</div>
+
+<div>
+  <button class="btn btn-warning" (click)="deleteTotalScore()">
+    Reset Game
+  </button>
+</div>
+

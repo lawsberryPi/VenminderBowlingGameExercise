@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "http://localhost:44440",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\luoch\\source\\repos\\VenminderCodingChallenge\\VenminderCodingChallenge\\ClientApp\\",
+"MaxTimeoutInSeconds": "120"
+}
+}
