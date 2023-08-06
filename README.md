@@ -17,7 +17,7 @@ The project is written in ASP.NET core 6, therefore, it can be ran on Windows or
 ## Data Type
 ![LinkedListDataType](https://github.com/lawsberryPi/VenminderBowlingGameExercise/assets/25314065/587ecc14-0726-4bba-a618-85405177d29a)
 
-Singly Linked Lists can represent bowling score frame appropriately, each node has the following properties list in the table:
+Singly Linked Lists can represent bowling score frame appropriately, each node has the following properties listed in the table:
 | FrameRolls    | Type       | Description                               |
 |---------------|------------|-------------------------------------------|
 | FrameNumber   | int        | indicate which frame this node represents |
