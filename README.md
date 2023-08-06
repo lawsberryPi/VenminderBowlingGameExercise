@@ -17,7 +17,15 @@ The project is written in ASP.NET core 6, therefore, it can be ran on Windows or
 ## Data Type
 ![LinkedListDataType](https://github.com/lawsberryPi/VenminderBowlingGameExercise/assets/25314065/587ecc14-0726-4bba-a618-85405177d29a)
 
-Singly Linked Lists can represent bowling score frame appropriately:
+Singly Linked Lists can represent bowling score frame appropriately, each node has the following properties list in the table:
+| FrameRolls    | Type       | Description                               |
+|---------------|------------|-------------------------------------------|
+| FrameNumber   | int        | indicate which frame this node represents |
+| Rolls         | List<int>  | all the roll scores in that frame         |
+| IsStrike      | bool       | this frame is a strike                    |
+| IsSpare       | bool       | this frame is a spare                     |
+| NextFrame     | FrameRolls | access to next frame from this frame      |
+| GetFrameScore | Function   | get the score for this frame              |
 - Because the frame score can be affected by the next two frames, therefore a relationship between frames is desired. Everytime when there is a new roll score gets push in. the program will iterate through the entire list to ensure every frame is updated.
 - There are some helpful booleans in the data type that represent a frame, which are IsStike and IsSpare. Store those data in each node makes the code easy to understand, because we don't need to create extra logic to figure out if that frame is IsStike or IsSpare.
 
