@@ -14,7 +14,7 @@ The project is written in ASP.NET core 6, therefore, it can be ran on Windows or
 
 
 # Software design key considerations
-## Data Type
+## Data type
 ![LinkedListDataType](https://github.com/lawsberryPi/VenminderBowlingGameExercise/assets/25314065/587ecc14-0726-4bba-a618-85405177d29a)
 
 Singly Linked Lists can represent bowling score frame appropriately, each node has the following properties listed in the table:
@@ -26,8 +26,18 @@ Singly Linked Lists can represent bowling score frame appropriately, each node h
 | IsSpare       | bool       | this frame is a spare                     |
 | NextFrame     | FrameRolls | access to next frame from this frame      |
 | GetFrameScore | Function   | get the score for this frame              |
-- Because the frame score can be affected by the next two frames, therefore a relationship between frames is desired. Everytime when there is a new roll score gets push in. the program will iterate through the entire list to ensure every frame is updated.
+
+- Because the frame score can be affected by the next two frames, therefore a relationship between frames is desired. Everytime when there is a new roll score gets posted. the program will iterate through the entire list to ensure every frame is updated.
 - IsStike and IsSpare are properties for the node, because once the frame is a strike/spare frame, that property will not change. Store those data in each node makes the code easy to understand, and no need to create extra logic when score is calculated.
+
+## Data type trade-offs
+- Time complexity, theoretical a frame score can only affected by the next two frames, if array/list data structure is chosen, we can just seek the next 2 elements max. With linked list approach, each entire list of nodes get updated by every score post.
+- For list/array data type, it is almost impossible to access next element from the current element. Thus updating score in real time would be very difficult.
+
+## Post return type
+Object includes:
+- List of frame details (frame number, roll1 score, roll2 score, roll3 score, frame score). This is used to populate the score table, therefore the table gets updated everytime a roll score is posted.
+- Next roll, this object indicate which frame and which roll the next delivery is going to post. As well as indicating if the game is finished. This is object can remove all the tracking logic in the UI, so UI can stay stateless.
 
 ## software design pattern: 
 MVC Pattern:
