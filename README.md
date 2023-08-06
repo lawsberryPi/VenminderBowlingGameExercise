@@ -30,7 +30,8 @@ MVC Pattern:
 
 Repository Pattern:
 - Although this is a relative small project, the author still wants the program to be flexible(by lose couping) and extentable in the future
-- BowlingScoreRepository contains all the logic that process and manipulate the data, including ProcessFrame, GetTotalScore, and ResetGame
+- BowlingScoreRepository contains all the logic that process and manipulate the data, including ProcessFrame, GetTotalScore, and ResetGame.
+- Since a data base will be an overkill for this project, I just simply instantiated the FrameRolls linked list head in the constructor of the repository. That mocks the process of "accessing to database"
 - Two special cases in blowing score game, first frame and last frame. I have created two private function to handle those two scenarios, so the program follows the single responsibility principle
 - Repository is a singleton and is injected to controller to follow dependency inversion principle
 
