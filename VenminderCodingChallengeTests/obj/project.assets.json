@@ -4328,11 +4328,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luoch\\OneDrive\\文档\\Repo\\VenminderBowlingGameExercise\\VenminderCodingChallengeTests\\VenminderCodingChallengeTests.csproj",
+      "projectUniqueName": "C:\\Users\\luoch\\source\\repos\\VenminderCodingChallenge\\VenminderCodingChallengeTests\\VenminderCodingChallengeTests.csproj",
       "projectName": "VenminderCodingChallengeTests",
-      "projectPath": "C:\\Users\\luoch\\OneDrive\\文档\\Repo\\VenminderBowlingGameExercise\\VenminderCodingChallengeTests\\VenminderCodingChallengeTests.csproj",
+      "projectPath": "C:\\Users\\luoch\\source\\repos\\VenminderCodingChallenge\\VenminderCodingChallengeTests\\VenminderCodingChallengeTests.csproj",
       "packagesPath": "C:\\Users\\luoch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luoch\\OneDrive\\文档\\Repo\\VenminderBowlingGameExercise\\VenminderCodingChallengeTests\\obj\\",
+      "outputPath": "C:\\Users\\luoch\\source\\repos\\VenminderCodingChallenge\\VenminderCodingChallengeTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\luoch\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4349,8 +4349,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\luoch\\OneDrive\\文档\\Repo\\VenminderBowlingGameExercise\\VenminderCodingChallenge\\VenminderCodingChallenge.csproj": {
-              "projectPath": "C:\\Users\\luoch\\OneDrive\\文档\\Repo\\VenminderBowlingGameExercise\\VenminderCodingChallenge\\VenminderCodingChallenge.csproj"
+            "C:\\Users\\luoch\\source\\repos\\VenminderCodingChallenge\\VenminderCodingChallenge\\VenminderCodingChallenge.csproj": {
+              "projectPath": "C:\\Users\\luoch\\source\\repos\\VenminderCodingChallenge\\VenminderCodingChallenge\\VenminderCodingChallenge.csproj"
             }
           }
         }
@@ -4406,7 +4406,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
