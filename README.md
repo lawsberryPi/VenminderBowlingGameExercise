@@ -11,7 +11,8 @@ The project is written in ASP.NET core 6, therefore, it can be ran on Windows or
 - The server returns where the next Roll will be by return next frame number and roll number(so the UI can be stateless)
 - Once all the rolls are completed, Delivery Button will be disabled and the text will change to Game is Finished. Then the disabled button Get Final Score will be enabled for query the final score from the server.
 - If user want to reset the game, then hit Reset the Game button to start over.
-Note: most of the UI code are generated from the scaffolding, in order to save time for viewer. Please only read home.component.ts and home.component.html.
+
+**Note: most of the UI code are generated from the scaffolding, in order to save time for viewer. Please only read home.component.ts and home.component.html.**
 
 
 # Software design key considerations
