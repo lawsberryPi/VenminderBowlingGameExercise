@@ -41,7 +41,7 @@ Object includes:
 
 ## software design pattern: 
 MVC Pattern:
-- BowlingController exposes /bowling endpoints, RESTful api pattern is applied here:
+- BowlingController exposes `/bowling` endpoints, RESTful api pattern is applied here:
     - Post: Post the newly scored roll score to the server
     - Get: Get the final score when game is over
     - Delete: Delete the "db"(represented by the singly linked list)
