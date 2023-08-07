@@ -8,9 +8,10 @@ The project is written in ASP.NET core 6, therefore, it can be ran on Windows or
 
 ## UI component
 - Roll score is manually typed in text box, and user need to click button Delivery in order to post the score to the server
-- The server returns where the next Roll will be by return next frame number and roll number(so the UI can be status agnostic)
+- The server returns where the next Roll will be by return next frame number and roll number(so the UI can be stateless)
 - Once all the rolls are completed, Delivery Button will be disabled and the text will change to Game is Finished. Then the disabled button Get Final Score will be enabled for query the final score from the server.
 - If user want to reset the game, then hit Reset the Game button to start over.
+Note: most of the UI code are generated from the scaffolding, in order to save time for viewer. Please only read home.component.ts and home.component.html.
 
 
 # Software design key considerations
@@ -67,3 +68,4 @@ Repository Pattern:
 
 ## Manual testing
 testing against the UI, make sure it doesn't break
+view manual testing results here https://drive.google.com/drive/folders/1kzFfLLLXbt7qOGfBVQhHMFaptNK-umqY
