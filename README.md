@@ -42,9 +42,9 @@ Object includes:
 ## software design pattern: 
 MVC Pattern:
 - BowlingController exposes `/bowling` endpoints, RESTful api pattern is applied here:
-    - Post: Post the newly scored roll score to the server
-    - Get: Get the final score when game is over
-    - Delete: Delete the "db"(represented by the singly linked list)
+    - `Post`: Post the newly scored roll score to the server
+    - `Get`: Get the final score when game is over
+    - `Delete`: Delete the "db"(represented by the singly linked list)
 - Client App is the view, which is implemented by Angular.js which is similar to Auralia 
 - Model: Created the Singly Linked that represent frame score in Model, defined the operations for Linked List like insert a new node to the tail, as well as update node. Each frame's score is calculated in the frame node as well for easy to read.
 
